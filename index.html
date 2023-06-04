@@ -7,8 +7,10 @@
     <title>Encriptador Alura</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    
     <header>
         <div class="logo">
             <h1><img src="imagenes/logo_alura.png" alt="Logo ALura"></h1>
@@ -18,15 +20,15 @@
         <div class="center">
             <section class="input">
                 <div class="ingresartexto">
-                    <input class="caja_input" type="text" value="" placeholder="Ingrese el texto aqui">
+                    <input id="box_in" class="caja_input" type="text" placeholder="Ingrese el texto aqui">
                 </div>
                 <div class="aviso">
                     
                     <p>&#x1f6c8 Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="botones">
-                    <button id="encriptar" class="boton" ><p>Encriptar</p></button>
-                    <button id="desencriptar" class="boton"><p>Desencriptar</p></button>
+                    <button id="encriptar" class="boton" onclick="btnEncriptar()"><p>Encriptar</p></button>
+                    <button id="desencriptar" class="boton" onclick="btnDesencriptar()" ><p>Desencriptar</p></button>
                 </div>
             </section>
             <section class="output">
@@ -66,6 +68,6 @@
 
         <p>Daniel Coronado - 2023</p>
     </footer>
-    
+<script src="script.js"></script>
 </body>
 </html>
