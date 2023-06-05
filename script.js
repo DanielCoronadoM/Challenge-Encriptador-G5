@@ -1,23 +1,38 @@
 const text_in = document.querySelector(".caja_input");
 const text_out = document.querySelector(".caja_output");
 
-//La letra "e" es convertida para "enter"
-//La letra "i" es convertida para "imes"
-//La letra "a" es convertida para "ai"
-//La letra "o" es convertida para "ober"
-//La letra "u" es convertida para "ufat"
+//variables para modificar DOM despues de hacer click(eliminar)
+ 
+const img = document.querySelector(".img-nomesage");
+const nomesage = document.querySelector(".nomesage");
+const instructions = document.querySelector(".instructions");
+
 
 
 
 function btnEncriptar(){
     let textoEncriptado = encriptar(text_in.value);
     text_out.value = textoEncriptado;
+    
+    img.remove();
+    nomesage.remove();
+    instructions.remove();
 }
 
 function btnDesencriptar(){
     let textoEncriptado = desencriptar(text_in.value);
-    text_out.value = textoEncriptado; 
+    text_out.value = textoEncriptado;
+
+    img.remove();
+    nomesage.remove();
+    instructions.remove();
 }
+
+//La letra "e" es convertida para "enter"
+//La letra "i" es convertida para "imes"
+//La letra "a" es convertida para "ai"
+//La letra "o" es convertida para "ober"
+//La letra "u" es convertida para "ufat"
 
 function encriptar(stringEncriptada){
     let matrizCodigo = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];

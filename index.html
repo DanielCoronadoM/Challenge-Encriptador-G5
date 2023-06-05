@@ -19,11 +19,12 @@
     <main>
         <div class="center">
             <section class="input">
-                <div class="ingresartexto">
-                    <input id="box_in" class="caja_input" type="text" placeholder="Ingrese el texto aqui">
-                </div>
+                
+                <!--<input id="box_in" class="caja_input" type="text" placeholder="Ingrese el texto aqui">-->
+                <textarea name="" id="" cols="30" rows="10" class="caja_input" placeholder="Ingrese el texto aqui"></textarea>
+
+                
                 <div class="aviso">
-                    
                     <p>&#x1f6c8 Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="botones">
@@ -31,10 +32,13 @@
                     <button id="desencriptar" class="boton" onclick="btnDesencriptar()" ><p>Desencriptar</p></button>
                 </div>
             </section>
+
             <section class="output">
+                <!--<textarea name="" id="" cols="30" rows="10" class="caja_output"></textarea> // Se agregara modificando el DOM desde Js-->
+
                 <textarea name="" id="" cols="30" rows="10" class="caja_output"></textarea>
-                
-                <img src="imagenes/Muñeco.png" alt="buscando algo">
+
+                <img src="imagenes/Muñeco.png" alt="buscando algo" class="img-nomesage">
                 
                 <div class="nomesage">
                     <h2>Ningún mensaje fue encontrado</h2>
