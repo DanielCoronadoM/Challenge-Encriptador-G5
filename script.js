@@ -16,6 +16,15 @@ function btnDesencriptar(){
     mostrarTexto();
 }
 
+function btnCopiar(){
+    text_out.select(); 
+    navigator.clipboard.writeText(text_out.value);
+    mensaje.value = "";
+    
+
+    //alert("Texto copiado");
+}
+
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
 //La letra "a" es convertida para "ai"
