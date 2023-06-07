@@ -1,31 +1,19 @@
 const text_in = document.querySelector(".caja_input");
 const text_out = document.querySelector(".caja_output");
 
-//variables para modificar DOM despues de hacer click(eliminar)
- 
-const img = document.querySelector(".img-nomesage");
-const nomesage = document.querySelector(".nomesage");
-const instructions = document.querySelector(".instructions");
-
-
-
 
 function btnEncriptar(){
     let textoEncriptado = encriptar(text_in.value);
     text_out.value = textoEncriptado;
     
-    img.remove();
-    nomesage.remove();
-    instructions.remove();
+    mostrarTexto();
 }
 
 function btnDesencriptar(){
     let textoEncriptado = desencriptar(text_in.value);
     text_out.value = textoEncriptado;
 
-    img.remove();
-    nomesage.remove();
-    instructions.remove();
+    mostrarTexto();
 }
 
 //La letra "e" es convertida para "enter"
@@ -60,8 +48,11 @@ function desencriptar(stringEncriptada){
     return stringEncriptada;
 }
 
+function mostrarTexto(){ //Muestra la caja de texto y oculta imagen, mensaje e instrucciones
+    document.getElementById("img-search").style.display = "none";
+    document.getElementById("mesage").style.display = "none";
+    document.getElementById("instr").style.display = "none";
 
-
-
-
-
+    document.getElementById("text-box").style.display = "block";
+    document.getElementById("copiar").style.display = "block";
+}

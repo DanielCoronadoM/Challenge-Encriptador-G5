@@ -34,19 +34,20 @@
             </section>
 
             <section class="output">
-                <!--<textarea name="" id="" cols="30" rows="10" class="caja_output"></textarea> // Se agregara modificando el DOM desde Js-->
 
-                <textarea name="" id="" cols="30" rows="10" class="caja_output"></textarea>
+                <textarea id="text-box" cols="30" rows="10" class="caja_output" style="display: none;"></textarea>
 
-                <img src="imagenes/Muñeco.png" alt="buscando algo" class="img-nomesage">
+                <img src="imagenes/Muñeco.png" alt="buscando algo" id="img-search" class="img-nomesage">
                 
-                <div class="nomesage">
+                <div id="mesage" class="nomesage">
                     <h2>Ningún mensaje fue encontrado</h2>
                 </div>
 
-                <div class="instructions">
+                <div id="instr" class="instructions">
                     <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
+
+                <button id="copiar" class="boton" style="display: none;"><p>Copiar!</p></button>
             </section>
 
         </div>
