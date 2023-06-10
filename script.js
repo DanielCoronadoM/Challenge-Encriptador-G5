@@ -19,7 +19,7 @@ function btnDesencriptar(){
 function btnCopiar(){
     text_out.select(); 
     navigator.clipboard.writeText(text_out.value);
-    mensaje.value = "";
+    text_out.value = "";
     
 
     //alert("Texto copiado");
